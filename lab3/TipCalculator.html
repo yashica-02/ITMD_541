@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="calculator-box">
+        <h2>ITMD 541 - Lab 3 - Yashica Sharma</h2><br>
+        <h1>Tip Calculator</h1>
+        
+        <form id="tipForm">
+            <label for="billTotal">Bill Total ($):</label>
+            <input type="text" id="billTotal" placeholder="Enter bill amount">
+            <div id="error-message" class="error-message"></div>
+
+            <label for="tipSlider">Tip Percentage:</label>
+            <input type="range" id="tipSlider" min="0" max="100">
+            <input type="text" id="tipPercentage" disabled>
+
+            <label for="tipAmount">Tip Amount:</label>
+            <input type="text" id="tipAmount" disabled>
+
+            <label for="totalWithTip">Total Bill with Tip:</label>
+            <input type="text" id="totalWithTip" disabled>
+
+            <label for="currencySelect">Select Currency:</label>
+            <select id="currencySelect">
+                <option value="USD">USD ($)</option>
+                <option value="INR">INR (₹)</option>
+                <option value="JPY">JPY (¥)</option>
+            </select>
+
+            <div class="conversion-rates">
+                <p>Current Conversion Rates:</p>
+                <p>1 USD = 84.07 INR</p>
+                <p>1 USD = 149.34 JPY</p>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
